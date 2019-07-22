@@ -1,6 +1,20 @@
 # mango-paola
 
 
+Mango Paola Ajedrez + Interface de Usuario
+
+http://mangocomputerca.blogspot.com/
+
+
+Busqueda Alfa-Beta Negamax: Variación de búsqueda principal
+Tabla de transposicion
+Poda por movimiento nulo
+Poda por movimiento tardio PODA MOVIMIENTO TARDIO
+Validacion regla 50 movimientos
+Tabla hash de movimientos variable
+Representacion del tablero por medio de tabla de bits (bitboard) 64 bits
+
+**************************************************************************************************
 
 Para instalar todas las librerias necesarias en la compilacion
 
