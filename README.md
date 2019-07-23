@@ -3,18 +3,46 @@
 
 Mango Paola Ajedrez + Interface de Usuario
 
-http://mangocomputerca.blogspot.com/
-
-
-Busqueda Alfa-Beta Negamax: Variación de búsqueda principal
-Tabla de transposicion
-Poda por movimiento nulo
-Poda por movimiento tardio PODA MOVIMIENTO TARDIO
-Validacion regla 50 movimientos
-Tabla hash de movimientos variable
-Representacion del tablero por medio de tabla de bits (bitboard) 64 bits
+http://mangocomputerca.blogspot.com/ (binarios y versiones)
 
 **************************************************************************************************
+
+¿Qué es Mango Paola?
+
+Es un programa de computadora para jugar ajedrez orientado al publico infantil, Mango Paola Ajedrez 
+fue creado con la intención que sea incorporado como software base en las computadoras Canaimitas y 
+Canaimas, no con esto significa que no pueda ser instalado en cualquier sistema Linux. Por otra parte, 
+Mango Paola Ajedrez tiene como fin último estimular la curiosidad de los niños más pequeños al juego ciencia. 
+Para ello, el software ha sido diseñado de una forma muy intuitiva, donde el pequeño ira paulatinamente adquiriendo 
+la destrezas necesarias para jugar por si mismo una partida de ajedrez convencional.
+
+Mango Paola Ajedrez posee múltiples herramientas visuales y sonoras que incentivan al niño a interactuar con 
+este deporte, llevándolo de la “mano” a lo largo del camino de aprendizaje de este apasionante juego. 
+Es importante resaltar, la conveniente intervención de los padres para reforzar el estimulo y servir de guía a 
+través del software. Cabe destacar que la mayoría de los niños a los 3 y 4 años aun no saben leer, 
+por ende no podrán entender el manual de ayuda. Lo más probable es que el niño termine primero jugando una 
+buena partida de ajedrez antes de aprender a leer.
+
+**************************************************************************************************
+
+
+Metodologías y tecnologías mas importantes empleadas en el motor
+
+* Búsqueda Alfa-Beta Negamax: Variación de búsqueda principal (algoritmo de búsqueda)
+* Tabla de transposición (Técnica para acelerar la búsqueda)
+* Poda por movimiento nulo (Podas de ramas menos prometedoras)
+* Poda por movimiento tardío (Podas de ramas menos prometedoras)
+* Poda por ventana mínima  (Podas de ramas menos prometedoras)
+* Validación regla 50 movimientos (Podas por reglas propias del ajedrez)
+* Tabla hash de movimientos variable (Técnica para acelerar la búsqueda)
+* Estructura de datos del tablero por medio de tabla de bits (bitboard) 64 bits (Técnica de representación del tablero )
+* Generación de movimientos legales por medio de aritmética de bits (Técnica para acelerar la búsqueda)
+
+
+**************************************************************************************************
+
+
+Notas:
 
 Para instalar todas las librerias necesarias en la compilacion
 
@@ -69,7 +97,7 @@ void inicializarVar()
 	sprintf(strRutaApp,"%s/mango-paola",strRutaHome);
 
 
-	strRutaApp es un string donde obviamente tengo la ruta donde esta el compilado y desde alli tambien encuentro los demas recursos (sonidos, imagenes, etc.)
+	strRutaApp es un string donde esta el compilado y desde allí se encuentra los demas recursos (sonidos, imagenes, etc.)
 
 	
 
