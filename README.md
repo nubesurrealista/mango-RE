@@ -3,30 +3,31 @@
 
 Mango Paola Ajedrez + Interface de Usuario
 
-http://mangocomputerca.blogspot.com/ (binarios y versiones)
+Blog oficial http://mangocomputerca.blogspot.com/
+Ranking Mundial del Motor https://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=1&eng=Mango%20Paola%20Ajedrez%204.1#Mango_Paola_Ajedrez_4_1
 
 **************************************************************************************************
 
 ¿Qué es Mango Paola?
 
-Es un programa de computadora para jugar ajedrez orientado al publico infantil, Mango Paola Ajedrez 
+Es un programa de computadora para jugar ajedrez orientado al público infantil, Mango Paola Ajedrez 
 fue creado con la intención que sea incorporado como software base en las computadoras Canaimitas y 
 Canaimas, no con esto significa que no pueda ser instalado en cualquier sistema Linux. Por otra parte, 
 Mango Paola Ajedrez tiene como fin último estimular la curiosidad de los niños más pequeños al juego ciencia. 
 Para ello, el software ha sido diseñado de una forma muy intuitiva, donde el pequeño ira paulatinamente adquiriendo 
-la destrezas necesarias para jugar por si mismo una partida de ajedrez convencional.
+las destrezas necesarias para jugar por sí mismo una partida de ajedrez convencional.
 
 Mango Paola Ajedrez posee múltiples herramientas visuales y sonoras que incentivan al niño a interactuar con 
-este deporte, llevándolo de la “mano” a lo largo del camino de aprendizaje de este apasionante juego. 
-Es importante resaltar, la conveniente intervención de los padres para reforzar el estimulo y servir de guía a 
-través del software. Cabe destacar que la mayoría de los niños a los 3 y 4 años aun no saben leer, 
+éste deporte, llevándolo de la “mano” a lo largo del camino de aprendizaje de este apasionante juego. 
+Es importante resaltar, la conveniente intervención de los padres para reforzar el estímulo y servir de guía a 
+través del software. Cabe destacar, que la mayoría de los niños a los 3 y 4 años aún no saben leer, 
 por ende no podrán entender el manual de ayuda. Lo más probable es que el niño termine primero jugando una 
 buena partida de ajedrez antes de aprender a leer.
 
 **************************************************************************************************
 
 
-Metodologías y tecnologías mas importantes empleadas en el motor
+Metodologías y tecnologías más importantes empleadas en el motor
 
 * Búsqueda Alfa-Beta Negamax: Variación de búsqueda principal (algoritmo de búsqueda)
 * Tabla de transposición (Técnica para acelerar la búsqueda)
@@ -44,7 +45,7 @@ Metodologías y tecnologías mas importantes empleadas en el motor
 
 Notas:
 
-Para instalar todas las librerias necesarias en la compilacion
+Para instalar todas las librerías necesarias en la compilación
 
 sudo apt-get install gcc pentium-builder pkg-config libgtk2.0-dev
 
@@ -52,7 +53,7 @@ NOTA: para que el programa pueda ser ejecutado, debe crearse una carpeta en la r
 
 /home/NombreDeUsuario/mango-paola/
 
-alli debe copiarse toda la estructura de carpetas y el binario
+allí debe copiarse toda la estructura de carpetas y el binario
 
 ejemplo: donde el usuario se llama <jose>
 
@@ -83,21 +84,21 @@ ejemplo: donde el usuario se llama <jose>
 Esto es debido a que en el archivo 
 ini.c 
 
-funcion 
+función 
 void inicializarVar()
 		
 	nos encontramos con esto:
 
-	//Leer Variables de Entorno
+	//Leer Variables del Entorno
 	bufferHOME = getenv("HOME");
-	//Hacemos una copiapara no usar la direccion original
+	//Hacemos una copia para no usar la dirección original
 	strncpy(strRutaHome,bufferHOME, strlen(bufferHOME));
 	
-	//Cargamos la variable con la ruta exacta donde esta instalada la aplicacion
+	//Cargamos la variable con la ruta exacta donde está instalada la aplicación
 	sprintf(strRutaApp,"%s/mango-paola",strRutaHome);
 
 
-	strRutaApp es un string donde esta el compilado y desde allí se encuentra los demas recursos (sonidos, imagenes, etc.)
+	strRutaApp es un string donde está el compilado y desde allí se encuentran los demás recursos (sonidos, imágenes, etc.)
 
 	
 
