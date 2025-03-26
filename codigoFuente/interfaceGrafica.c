@@ -5343,7 +5343,7 @@ void mostrarMensaje(char *msj, char *titulo)
 						         GTK_RESPONSE_CANCEL,
 						         NULL);
 		content_area = (GTK_DIALOG(ventanaConfirmar))->vbox;
-		labelMensaje = gtk_label_new("");
+		//labelMensaje = gtk_label_new("");
 		markup = g_markup_printf_escaped(msj);
 		gtk_label_set_markup(GTK_LABEL(labelMensaje), markup);
 
@@ -6302,7 +6302,7 @@ static gboolean introFEN()
 		gtk_widget_set_sensitive(adelanteBoton, FALSE);
 		gtk_widget_set_sensitive(ultimoBoton,   FALSE);
 
-		reDibujarTodo();
+		//reDibujarTodo();
 
 		strMaquillado = g_markup_printf_escaped(
 		 "<span background=\"#0D3C05\" weight=\"bold\" size=\"large\"><span color=\"#7A7A7A\"> Eval:%d </span><span color=\"#000000\"> Mat:%d </span></span>",
