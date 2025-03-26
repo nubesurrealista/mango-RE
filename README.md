@@ -1,10 +1,13 @@
+**Esto es un fork de Mango Paola, uso personal, un intento de revivir algo de nostalgia juvenil.**
+
 # mango-paola
 
 
 Mango Paola Ajedrez + Interface de Usuario
 
 Blog oficial http://mangocomputerca.blogspot.com/
-Ranking Mundial del Motor https://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=1&eng=Mango%20Paola%20Ajedrez%204.1#Mango_Paola_Ajedrez_4_1
+
+[Ranking Mundial del Motor](https://web.archive.org/web/20230113035113/https://ccrl.chessdom.com/ccrl/4040/cgi/engine_details.cgi?print=Details&each_game=1&eng=Mango%20Paola%20Ajedrez%204.1)
 
 **************************************************************************************************
 
